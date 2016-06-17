@@ -1,0 +1,14 @@
+RewriteEngine On
+#ErrorDocument 404 http://localhost/motorhappy.co.za/notfound
+RewriteRule  ^([A-Za-z0-9-]+)/?$   index.php?m=$1&%{QUERY_STRING}    [NC,L]
+
+#ErrorDocument 404 "Page Not Found"  #display text on 404
+
+#RewriteRule  ^page/(.*)/?$  index.php?m=$1    [NC,L] # action can be returied from page
+
+
+#RewriteRule ^index.php$  http://localhost/motorhappy.co.za/ [R=301,L]
+#RewriteRule ^index.php(.*)$ http://localhost/motorhappy.co.za/$1&%{QUERY_STRING} [R=301,L]
+#RewriteRule ^index.php/(.*)$ index.php?m=$1&%{QUERY_STRING} [NC,L]
+#RewriteRule ^Front/index.php/(.*)$ Front/index.php?m=$1&%{QUERY_STRING} [NC,L]
+#RewriteRule ^/(.*)$ http://localhost/motorhappy.co.za/Front/index.php?m=$1&%{QUERY_STRING} [NC,L]

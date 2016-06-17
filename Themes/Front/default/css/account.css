@@ -1,0 +1,299 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	background: #ffffff;
+	font-family: 'Open Sans', Arial, Helvetica, Sans-serif, Verdana, Tahoma;
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	color: #b63b4d;
+	text-decoration: none;
+}
+
+/** =======================
+ * Contenedor Principal
+ ===========================*/
+h1 {
+ 	color: #FFF;
+ 	font-size: 24px;
+ 	font-weight: 400;
+ 	text-align: center;
+ 	margin-top: 80px;
+ }
+
+h1 a {
+ 	color: #c12c42;
+ 	font-size: 16px;
+ }
+ .box-style-nav {
+ 	width: 100%;
+ 	background: #575756;
+ 	-webkit-border-radius: 4px;
+ 	-moz-border-radius: 4px;
+ 	border-radius: 4px;
+ }
+  .box-style-nav .btn-box {
+     padding: 30px 10px; 
+ 	
+ }
+
+ .accordion {
+ 	width: 100%;
+ 	
+ 	background: #575756;
+ 	-webkit-border-radius: 4px;
+ 	-moz-border-radius: 4px;
+ 	border-radius: 4px;
+ }
+
+.accordion .link {
+	cursor: pointer;
+	display: block;
+	padding: 15px 15px 15px 42px;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 700;
+	
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.accordion li:last-child .link {
+	border-bottom: 0;
+}
+
+.accordion li i {
+	position: absolute;
+	top: 16px;
+	left: 24px;
+	font-size: 18px;
+	color: #ffffff;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+	right: 12px;
+	left: auto;
+	font-size: 16px;
+}
+
+.accordion li.open .link {
+	color: #FFF;
+	    background: #3c3c3b;
+}
+
+.accordion li.open i {
+	color: #ffffff;
+}
+.accordion li.open i.fa-chevron-down {
+	-webkit-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+
+.accordion li.default .submenu {display: block;}
+/**
+ * Submenu
+ -----------------------------*/
+ .submenu {
+ 	display: none;
+ 	background: #575756;
+ 	font-size: 14px;
+ }
+
+ .submenu li {
+ 	border-bottom: 1px solid #575756;
+ 	    position: relative;
+ }
+
+ .submenu a {
+ 	display: block;
+ 	text-decoration: none;
+ 	color: #d9d9d9;
+ 	padding: 12px;
+ 	padding-left: 42px;
+ 	-webkit-transition: all 0.25s ease;
+ 	-o-transition: all 0.25s ease;
+ 	transition: all 0.25s ease;
+ }
+
+ .submenu a:hover {
+ 	
+ 	color: #FFF;
+ }
+
+ .table-box {
+    display: inline-block;
+    margin: 0px 0 24px 0px;
+}
+ .plan-title {
+ 	    color: #DC3D60;
+    text-align: left;
+    margin: 20px 0 14px 0px;
+ }
+
+.box-title {
+    background: #d9d9d9;
+    border: 1px solid #c6c6c5;
+    border-radius: 4px 4px 0px 0px;
+    padding: 14px;
+    display: inline-block;
+    width: 100%;
+}
+
+.box-title .icon {
+    background: url("https://www.motorhappy.co.za/wp-content/themes/motorhappy-roots-theme/assets/newImg/header-footer-sprite.png");
+    display: block;
+    height: 68px;
+    width: 68px;
+    text-indent: -9999px;
+        float: left;
+}
+.box-title .text {
+	    float: left;
+    margin-left: 18px;
+}
+.box-title .text h3 {
+	text-align: left;
+    font-weight: bold;
+    font-style: normal;
+    margin-top:6px;
+    color: #6f6f6e;
+}
+.box-title .text h4 {
+	    text-align: left;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    margin-top: 10px;
+    color: #6f6f6e;
+}
+.content-detail {     
+	    position: relative;
+    padding: 0px;
+    display: inline-block;
+    width: 100%;
+    float: left;
+    border: 1px solid #cdcdcd;
+    border-top: none;
+    margin-top: -5px;}
+.content-detail i {    position: absolute;
+    font-size: 28px;
+    left: 18px;
+    top: 45px;
+    color: #b0b0b0; }
+.title {color: #868686;    
+    margin-left: 50px;
+    border-left: 1px solid #cdcdcd;
+    text-align: left;
+    font-style: normal;
+    padding: 20px;}
+.title .main-title {    
+	font-size: 20px;    
+	font-style: normal;
+   }
+.title .small-title {    
+    padding: 10px 0px 4px 0;
+    font-weight: 600;
+font-style: normal;}
+.title .price-title {
+	    color: #009BCA;
+   font-style: normal;
+}
+.title a {color: #868686;}  
+.step-tag-disable {  
+	    position: absolute;
+    right: 0;
+    top: 20px;
+    background: #c6c6c5;
+    padding: 8px 10px;
+    border-radius: 50px 0px 0px 50px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #b1b1b1;
+
+}
+.step-tag-active {  
+	    position: absolute;
+    right: 0;
+    top: 20px;
+    background: #e9516c;
+    padding: 8px 10px;
+    border-radius: 50px 0px 0px 50px;
+    font-weight: bold;
+    font-size: 12px;
+    color: #ffffff;
+
+}
+/* Added on 5 May, 2016 */
+.bg-blue {
+    background: #389fc2 none repeat scroll 0 0 !important;
+	border: 1px solid #389fc2;
+}
+.extra-info{
+	-moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #cdcdcd #cdcdcd;
+    border-image: none;
+    border-style: none solid solid;
+    border-width: medium 1px 1px;
+    display: inline-block;
+    float: left;
+    margin-top: -5px;
+    padding: 0;
+    position: relative;
+    width: 100%;
+}
+.my-account .accordion-toggle.inner-first-a {
+    display: inline-block;
+    width: 100%;
+}
+.panel {
+	border-radius: 0px;
+	margin-bottom: 0;
+}
+.panel-default {
+    border-color: #389fc2;
+    text-align: left;
+}
+.panel-default h4{
+    color: #fff;
+	font-style: normal;
+	margin: 0 10px;
+}
+.panel-default > .panel-heading {
+    background-color: #f5f5f5;
+    border-color: #389fc2;
+    color: #333333;
+	border-radius: 0;
+}
+.inner-angle-right {
+    text-align: center;
+    width: 47px;
+}
+.inner-collapse-heading {
+    margin-left: 13px;
+	font-size: 18px;
+}
+.payment-detail {
+    background: #ececec none repeat scroll 0 0;
+}
+
+/* End */
